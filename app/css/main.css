@@ -1,0 +1,888 @@
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
+  \***********************************************************************************************************/
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url(../0740782db955471332e3.eot);
+  src: url(../0740782db955471332e3.eot) format("embedded-opentype"), url(../fonts/TTLakesCondensed-Regular.woff) format("woff"), url(../1965aa75b1a0c5d96534.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url(../018ab39c10b6a4a7146a.eot);
+  src: url(../018ab39c10b6a4a7146a.eot) format("embedded-opentype"), url(../fonts/TTLakes-Medium.woff) format("woff"), url(../1db5f8df31efefe6bea1.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url(../c241ebcfcbd5a82503ea.eot);
+  src: url(../c241ebcfcbd5a82503ea.eot) format("embedded-opentype"), url(../fonts/TTLakes-Bold.woff) format("woff"), url(../8747246cd48097156cbb.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+
+input {
+  border: none;
+  outline: none;
+  height: 48px;
+  border: 1px solid #EAEAEA;
+  background-color: transparent;
+  border-radius: 8px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center; }
+
+textarea {
+  border: none;
+  outline: none;
+  height: 118px;
+  border: 1px solid #EAEAEA;
+  background-color: transparent;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-top: 16px; }
+
+.burger-menu {
+  width: 320px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #1B1C21;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: bounceInLeft;
+  animation-duration: 1.5s; }
+  @media screen and (min-width: 768px) and (max-width: 1120px) {
+    .burger-menu {
+      display: none;
+      box-shadow: 16px 0px 52px 0px #0e185033;
+      z-index: 3;
+      width: 320px; } }
+  @media screen and (min-width: 0) and (max-width: 767px) {
+    .burger-menu {
+      display: none;
+      box-shadow: 16px 0px 52px 0px #0e185033;
+      z-index: 1;
+      width: 100%; } }
+  @media screen and (min-width: 1120px) {
+    .burger-menu__close-btn {
+      display: none; } }
+  .burger-menu__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 32px; }
+  .burger-menu__header {
+    display: flex;
+    justify-content: space-between; }
+  .burger-menu__body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 37px; }
+  .burger-menu__link {
+    color: #1B1C21;
+    font-family: "TT Lakes Medium";
+    line-height: 24px; }
+  .burger-menu__active {
+    color: #7E7E82;
+    position: relative; }
+  .burger-menu__active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 4px solid #41F6D7;
+    border-radius: 2px;
+    left: -20px;
+    top: -4px;
+    height: 28px; }
+  .burger-menu__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+  .burger-menu__icons {
+    display: flex;
+    gap: 16px; }
+  .burger-menu__number {
+    font-size: 24px;
+    font-family: "TT Lakes Bold"; }
+  .burger-menu__languages {
+    display: flex;
+    gap: 7px;
+    margin-top: 15px;
+    font-family: "TT Lakes Medium"; }
+  .burger-menu__main-nav {
+    display: flex;
+    gap: 16px; }
+
+.service-section-info {
+  display: flex;
+  flex-direction: column; }
+  .service-section-info__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid #41F6D7;
+    border-radius: 2px; }
+  .service-section-info__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .service-section-info__icons {
+    display: flex;
+    gap: 32px; }
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      .service-section-info__icons {
+        display: none; } }
+    @media screen and (min-width: 0) and (max-width: 767px) {
+      .service-section-info__icons {
+        display: none; } }
+  .service-section-info .service-section-info__static-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px;
+    margin-top: 10px; }
+    @media screen and (min-width: 0) and (max-width: 1120px) {
+      .service-section-info .service-section-info__static-menu {
+        display: none; } }
+  .service-section-info__ticket {
+    display: flex;
+    align-items: center;
+    gap: 8px; }
+  .service-section-info__repair {
+    display: flex;
+    align-items: center;
+    gap: 8px; }
+  .service-section-info__title {
+    font-size: 28px;
+    font-family: 'TT Lakes Bold'; }
+  .service-section-info__menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px;
+    margin-top: 10px; }
+  .service-section-info__menu-item {
+    color: #7E7E82; }
+    @media screen and (min-width: 0) and (max-width: 767px) {
+      .service-section-info__menu-item {
+        font-size: 12px; } }
+  .service-section-info__slider {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 0; }
+    @media screen and (min-width: 1120px) {
+      .service-section-info__slider {
+        display: none; } }
+
+.current-item {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  width: 233px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+
+.container {
+  padding-left: 34px;
+  padding-right: 30px; }
+
+.service-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; }
+  @media screen and (min-width: 0) and (max-width: 767px) {
+    .service-section-content {
+      flex-direction: column; } }
+  .service-section-content__wrapper {
+    padding-top: 10px;
+    padding-right: 36px;
+    height: 243px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px; }
+  .service-section-content__info {
+    font-size: 14px;
+    line-height: 20px;
+    color: #7E7E82;
+    max-height: 343px; }
+  .service-section-content__photo {
+    width: 100%;
+    height: 246px;
+    border-radius: 10px; }
+    @media screen and (min-width: 0) and (max-width: 767px) {
+      .service-section-content__photo {
+        border-radius: 0;
+        width: 100%;
+        height: 230px; } }
+  .service-section-content__button {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+
+.header {
+  width: 100%;
+  height: 88px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px; }
+  .header__logo {
+    display: flex;
+    gap: 40px; }
+    @media screen and (max-width: 767px) {
+      .header__logo {
+        gap: 16px; } }
+  .header__nav-menu {
+    display: flex;
+    gap: 16px; }
+  .header__modals {
+    display: flex;
+    gap: 16px; }
+    @media screen and (max-width: 767px) {
+      .header__modals {
+        display: none; } }
+  @media screen and (min-width: 1120px) {
+    .header {
+      display: none; } }
+
+.service-section-repair {
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px; }
+  .service-section-repair__header {
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    border-top: 1px solid #D9FFF5;
+    display: flex;
+    align-items: center;
+    color: #7E7E82;
+    line-height: 24px; }
+  .service-section-repair__body {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-right: 24px;
+    flex-wrap: wrap;
+    gap: 32px; }
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      .service-section-repair__body {
+        gap: 20px; } }
+    @media screen and (max-width: 767px) {
+      .service-section-repair__body {
+        display: none; } }
+  .service-section-repair__item-brand {
+    width: 240px;
+    height: 72px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      .service-section-repair__item-brand {
+        width: 224px; } }
+  .service-section-repair__item-texnika {
+    width: 240px;
+    height: 160px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      .service-section-repair__item-texnika {
+        width: 224px; } }
+  .service-section-repair__item-texnika img {
+    width: 40px; }
+  .service-section-repair__footer {
+    margin-top: 24px; }
+    @media screen and (max-width: 767px) {
+      .service-section-repair__footer {
+        display: none; } }
+  .service-section-repair__item-text {
+    height: 120px; }
+  .service-section-repair__slider {
+    margin-top: 20px;
+    z-index: 0; }
+    @media screen and (min-width: 767px) {
+      .service-section-repair__slider {
+        display: none; } }
+  .service-section-repair__item-container {
+    width: 208px;
+    height: 40px;
+    display: flex;
+    justify-content: end; }
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      .service-section-repair__item-container {
+        width: 176px; } }
+
+.service-section-price {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px; }
+  .service-section-price__header {
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    border-top: 1px solid #D9FFF5;
+    display: flex;
+    align-items: center;
+    color: #7E7E82;
+    line-height: 24px; }
+  .service-section-price__body {
+    margin-top: 40px;
+    margin-bottom: 32px;
+    width: 100%;
+    background-color: white; }
+    @media screen and (max-width: 767px) {
+      .service-section-price__body {
+        display: none; } }
+  .service-section-price__item {
+    height: 64px;
+    border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .service-section-price__button {
+    height: 32px;
+    background-color: #ff3e79;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 7px;
+    padding-left: 14px;
+    padding-right: 12px; }
+  .service-section-price__footer {
+    display: flex;
+    flex-direction: column;
+    width: 421px;
+    gap: 16px; }
+  .service-section-price__text {
+    font-size: 14px;
+    line-height: 20px; }
+  .service-section-price__agreement {
+    display: flex;
+    align-items: center;
+    font-family: "TT Lakes Bold";
+    gap: 10px; }
+  .service-section-price__title {
+    width: 300px; }
+  .service-section-price__item-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 16px;
+    width: 260px;
+    height: 200px;
+    border-radius: 6px; }
+  .service-section-price__item-slider-title {
+    font-size: 14px;
+    color: #7E7E82; }
+  .service-section-price__item-slider-text {
+    gap: 28px;
+    display: flex;
+    align-items: center;
+    font-size: 14px; }
+
+.footer {
+  display: flex;
+  height: 85px;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-top: 1px solid #D9FFF5;
+  font-size: 14px;
+  justify-content: space-between;
+  color: #7E7E82; }
+  @media screen and (max-width: 767px) {
+    .footer {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      height: 100%;
+      flex-direction: column;
+      align-items: start;
+      gap: 16px; } }
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; }
+  .modal__background {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    opacity: 96%;
+    display: flex;
+    justify-content: right; }
+  .modal__window {
+    width: 440px;
+    height: 100vh;
+    opacity: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 16px 0px 52px 0px #0E185033;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: bounceInRight;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; }
+    @media screen and (max-width: 767px) {
+      .modal__window {
+        width: 100%;
+        padding-top: 114px; } }
+  .modal__title {
+    width: 100%;
+    border-left: 3px solid #41F6D7;
+    height: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 24px;
+    font-family: 'TT Lakes Bold'; }
+  .modal__form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+  .modal__text {
+    font-size: 14px;
+    color: #7E7E82; }
+  .modal__button {
+    width: 100%;
+    display: flex;
+    justify-content: right; }
+  .modal__close-btn {
+    position: absolute;
+    top: 40px;
+    left: -80px; }
+    @media screen and (max-width: 767px) {
+      .modal__close-btn {
+        top: 40px;
+        left: 32px; } }
+  .modal .container-modal {
+    padding-left: 32px;
+    padding-right: 32px; }
+
+.swiper {
+  width: 320px;
+  height: 130px;
+  padding-bottom: 20px; }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13px; }
+
+.swiper-pagination-bullet {
+  background-color: #bdbdbd; }
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc; }
+
+#info-slider {
+  width: 100%;
+  height: 60px; }
+
+#technik-slider {
+  height: 230px; }
+
+#price-slider {
+  height: 270px; }
+
+body {
+  font-family: "TT Lakes Medium"; }
+
+main {
+  width: 1120px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  padding-top: 42px;
+  background-color: #F8F8F8; }
+  @media screen and (min-width: 768px) and (max-width: 1120px) {
+    main {
+      width: 100%;
+      position: static; } }
+  @media screen and (min-width: 0) and (max-width: 767px) {
+    main {
+      width: 100%;
+      position: static; } }
+
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+  .unshow {
+    display: none; } }
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .unshow {
+    display: none; } }
+
+.unvisible {
+  display: none; }
+
+.animateItem {
+  animation: fadeInDown;
+  animation-duration: 1.5s; }
+
+.btn-menu {
+  cursor: pointer; }
+
+
+/*# sourceMappingURL=main.css.map*/

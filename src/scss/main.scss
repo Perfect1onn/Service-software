@@ -1,0 +1,59 @@
+@import "fonts";
+@import "vendor";
+@import "vars";
+@import "settings";
+@import "./blocks/burger-menu.scss";
+@import "./blocks/service-section-info.scss";
+@import "./blocks/service-section-content";
+@import "./blocks/header.scss";
+@import "./blocks/service-section-repair.scss";
+@import "./blocks/service-section-price.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/_modal.scss";
+@import "./blocks/service-section-repair-slider.scss";
+
+body {
+  font-family: "TT Lakes Medium";
+}
+
+main {
+  width: 1120px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  padding-top: 42px;
+  background-color: ($main-bg-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1120px) {
+    width: 100%;
+    position: static;
+  }   
+  @media screen and (min-width: 0) and (max-width: 767px) {
+    width: 100%;
+    position: static;
+  }
+}
+
+.unshow {
+  @media screen and (min-width: 768px) and (max-width: 1120px) {
+    display: none;
+  }
+  @media screen and (min-width: 0) and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.unvisible {
+  display: none;
+}
+
+
+.animateItem {
+  animation: fadeInDown;
+  animation-duration: 1.5s;
+}
+
+.btn-menu {
+  cursor: pointer;
+}

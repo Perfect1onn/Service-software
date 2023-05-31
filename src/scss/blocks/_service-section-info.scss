@@ -1,0 +1,105 @@
+@import "../vars";
+
+.service-section-info {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-left: 4px solid ($current-section-color);
+        border-radius: 2px;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 32px;
+        @media screen and (min-width: 768px) and (max-width: 1120px) {
+            display: none;
+          }
+          @media screen and (min-width: 0) and (max-width: 767px) {
+            display: none;
+          }
+    }
+
+    .service-section-info__static-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 35px;
+        margin-top: 10px;
+        @media screen and (min-width: 0) and (max-width: 1120px) {
+            display: none;
+          }
+    }
+
+    &__ticket {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__repair {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-family: 'TT Lakes Bold';
+    }
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 35px;
+        margin-top: 10px;
+        // @media screen and (min-width: 0) and (max-width: 767px) {
+        //     display: none;
+        // }
+    }
+
+    &__menu-item {
+        color: ($grey-font-color);
+        @media screen and (min-width: 0) and (max-width: 767px){
+            font-size: 12px;
+        }
+    }
+
+    &__slider {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+        @media screen and (min-width: 1120px) {
+            display: none;
+          }
+      }
+}
+
+.current-item {
+    border: 2px solid ($current-item-color);
+    border-radius: 6px;
+    width: 233px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    padding-left: 34px;
+    padding-right: 30px;
+}
+

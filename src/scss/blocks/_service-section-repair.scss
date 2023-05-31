@@ -1,0 +1,98 @@
+@import "../vars";
+
+.service-section-repair {
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  // margin-bottom: 40px;
+
+  &__header {
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    border-top: 1px solid ($block-border-color);
+    display: flex;
+    align-items: center;
+    color: ($grey-font-color);
+    line-height: 24px;
+  }
+
+  &__body {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-right: 24px;
+    flex-wrap: wrap;
+    gap: 32px;
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      gap: 20px;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__item-brand {
+    width: 240px;
+    height: 72px;
+    background-color: white;
+    border: 1px solid ($item-border-color);
+    border-radius: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      width: 224px;
+    }
+  }
+
+  &__item-texnika {
+    width: 240px;
+    height: 160px;
+    background-color: white;
+    border: 1px solid ($item-border-color);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      width: 224px;
+    }
+  }
+
+  &__item-texnika img {
+    width: 40px;
+  }
+
+  &__footer {
+    margin-top: 24px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__item-text {
+    height: 120px;
+  }
+
+  &__slider {
+    margin-top: 20px;
+    z-index: 0;
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__item-container {
+    width: 208px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      width: 176px;
+    }
+  }
+}

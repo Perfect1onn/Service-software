@@ -1,0 +1,44 @@
+@import "../vars";
+
+.service-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  @media screen and (min-width: 0) and (max-width: 767px) {
+      flex-direction: column;
+  }
+
+  &__wrapper {
+    padding-top: 10px;
+    padding-right: 36px;
+    height: 243px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 20px;
+    color: ($grey-font-color);
+    max-height: 343px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 246px;
+    border-radius: 10px;
+    @media screen and (min-width: 0) and (max-width: 767px) {
+      border-radius: 0;
+      width: 100%;
+      height: 230px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

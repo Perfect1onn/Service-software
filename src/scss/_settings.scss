@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+  height: 48px;
+  border: 1px solid #EAEAEA;
+  background-color: transparent;
+  border-radius: 8px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+
+textarea {
+  border: none;
+  outline: none;
+  height: 118px;
+  border: 1px solid #EAEAEA;
+  background-color: transparent;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
